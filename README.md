@@ -2,7 +2,7 @@
 
 This project implements a **Vision Transformer (ViT)** for deepfake detection in videos, designed to detect deepfakes using the Celeb-DF (v2) dataset.
 
-## 📌 Features
+## Features
 
 - Vision Transformer (ViT)-based classification
 - Frame-wise processing with temporal averaging
@@ -13,20 +13,20 @@ This project implements a **Vision Transformer (ViT)** for deepfake detection in
 	- Precision
 	- Equal Error Rate (EER)
 
-## 🛠️ Installation
+## Installation
 
 Clone the repository and install dependencies:
 ```bash
 pip  install  -r  requirements.txt
 ```
 
-## 📂 Dataset
+## Dataset
 
 The model is trained on the **Celeb-DF v2** dataset. You can download it from here: [Celeb-DF GitHub](https://github.com/yuezunli/Celeb-DF)
 
 Just download the dataset and rename the root folder as *dataset*.
 
-## ⚙️ Hardware Recommendation
+## Hardware Recommendation
 
 Try training and testing the model over platforms like [Google Colab](https://colab.research.google.com) and [Kaggle](https://www.kaggle.com) for low time consumption. For training on Kaggle:
 - Use **T4 GPU**
@@ -36,7 +36,7 @@ Try training and testing the model over platforms like [Google Colab](https://co
 	- Using smaller image sizes (e.g., 224x224)
 	- Using mixed precision (`torch.cuda.amp`)
 
-## 💡 Tips
+## Tips
 
 - Use `transform = transforms.Compose([...])` for image preprocessing.
 - Ensure all tensors are sent to `device` (e.g., `cuda`).
@@ -52,6 +52,6 @@ model.eval()
 ```
 - This allows the model to be used for various purposes including real-time operations.
 
-## 📬 Contributing
+## Contributing
 
 Feel free to open an issue or submit a pull request if you'd like to improve or extend this project.
